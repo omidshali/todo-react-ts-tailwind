@@ -1,3 +1,8 @@
+import { TodoContextProvider } from "./context/todo-context-provider";
 export function App() {
-  return <div className={"bg-slate-400"}>hi </div>;
+  return (
+    <TodoContextProvider>
+      <div>To do app</div>
+    </TodoContextProvider>
+  );
 }
